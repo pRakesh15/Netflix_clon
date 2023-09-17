@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Carter+One&family=Cinzel&family=Comfortaa:wght@300&family=Crimson+Text&family=Julius+Sans+One&family=Roboto:wght@300;400&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: "Roboto",sans-serif;
+    color: white;
+    &::-webkit-scrollbar
+    {
+        display: none;
+    }
+}
+
+a
+{
+    color: white;
+    text-decoration: none;
+}
+$bg: rgb(0, 0, 0);
+
+.header
+{
+    height: 60px;
+    background-color:$bg;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+
+    >img
+    {
+        height: 130%;
+    }
+    >.content
+    {
+      
+        width: 100%;
+        margin-left: 4vmax;
+        >a
+        {
+            margin: 1.5vmax;
+            font-size: 16px;
+            font-weight: 300;
+
+            
+        &:hover
+        {
+            color: rgb(220, 0, 0);
+        }
+        }
+    }
+    >svg
+    {
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+        margin-right: 20px;
+
+        &:hover
+        {
+            color: rgb(220, 0, 0);
+        }
+    }
+
+}
+
+.Movie
+{
+    background-color: $bg;
+   
+ 
+    >.item
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: block;
+        margin-left: 40px;
+
+        >.card
+        {
+            width: 200px;
+        }
+    }
+}
+
+.Spinner
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+

@@ -1,0 +1,124 @@
+$bg: rgb(0, 0, 0);
+
+.banner
+{
+    background-color: $bg;
+    height: 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    &::after
+    {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: $bg;
+        opacity: .3;
+
+    }
+
+    h3
+    {
+        color: white;
+        width: 40%;
+        font-size: 3rem;
+        font-family: 'Julius Sans One', sans-serif;
+        margin-top: 150px;
+        margin-left: 40px;
+        z-index: 10;
+    }
+    p
+    {
+        color: white;
+        width: 30%;
+        font-size:1.3rem;
+        margin-top: 20px;
+        font-family: Footlight MT Light;
+        margin-left: 40px;
+        z-index: 9;
+        letter-spacing: 1px;
+
+
+    }
+    >div
+    {
+        display: flex;
+    }
+    button
+    {
+        padding: .6rem;
+        width: 80px;
+        color: black;
+        font-size: .9rem;
+        outline: none;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 40px;
+        margin-top: 20px;
+        box-sizing: border-box;
+        z-index: 10;
+        font-weight: 400;
+
+        &:nth-child(odd)
+        {
+            background-color: white;
+        }
+        &:nth-child(even)
+        {
+            background-color: rgb(84, 81, 81);
+            width: 120px;
+            color: rgb(255, 255, 255);
+        }
+
+        svg
+        {
+            font-size: 1rem;
+            color: rgb(0, 0, 0);
+            margin-right: 5px;
+        }
+        &:hover
+        {
+            cursor: pointer;
+        }
+
+    }
+
+}
+.irow
+{
+    margin-top: -35px;
+}
+.row
+{
+    padding: 1rem;
+    background-color: $bg;
+    >h2
+    {
+       font-weight: 400;
+       margin: .3rem;
+     position: relative;
+       margin-top: -20px;
+       background: transparent;
+    }
+    >div
+    {
+        display: flex;
+        overflow-x: auto;
+    }
+}
+.card
+{
+    width: 170px;
+    cursor: pointer;
+    margin: .23rem;
+    transition: transform 0.5s;
+    &:hover
+    {
+        transform: translateY(-10px)scale(1.05);
+    }
+}
